@@ -8,8 +8,7 @@ const adminEmailPassword = process.env.ADMIN_EMAIL_PASSWORD;
 const myName = "firstName lastName";
 const myEmail = "firstNamelastName@server.com";
 const myLinkedin = "https://www.linkedin.com/in/firstName-lastName/";
-const myFieldOrJobDescriptionKeywords = "customer service, SDLC, teamwork, and communication";
-const myExperienceOrSkills = "JavaScript, Java, and MySQL";
+const transferableSkills = "customer service, SDLC, teamwork, and communication";
 const myAvailability = "Monday through Friday after 3 P.M.";
 
 const recipients = [
@@ -20,6 +19,7 @@ const recipients = [
         postingLink: "https://www.github.careers/careers-home/jobs/3041?lang=en-us",
         postingId: "Req ID: 3041",
         companyName: "GitHub",
+        jobDescriptionKeywords: "JavaScript, REST-style APIs, working with a remote, distributed team, and distributed systems",
         companyMissionValuesOrRecentProjects:
             "your values of customer-obsessed, ship to learn, growth mindset, own the outcome, better together, and diverse and inclusive",
     },
@@ -31,6 +31,7 @@ const recipients = [
             "https://www.google.com/about/careers/applications/jobs/results/136201984171483846-software-engineer-search",
         postingId: "Req ID: 2024",
         companyName: "Google",
+        jobDescriptionKeywords: "Python, machine learning, recommender systems, analytics, problem-solving, and coding",
         companyMissionValuesOrRecentProjects:
             "your mission to organize the world's information and make it universally accessible and useful",
     },
@@ -82,9 +83,9 @@ recipients.forEach((recipient) => {
         `<div>
             <p>Dear ${recipient.hiringManagerName},</p>
     
-        <p>I hope this message finds you well. My name is ${myName}, and I recently applied for the ${recipient.positionJobTitle} position (<a href="${recipient.postingLink}">${recipient.postingId}</a>) at ${recipient.companyName}. I am very excited about the opportunity to contribute to your team and would love to further discuss how my background in ${myFieldOrJobDescriptionKeywords} aligns with the needs of ${recipient.companyName}.</p >
+        <p>I hope this message finds you well. My name is ${myName}, and I recently applied for the ${recipient.positionJobTitle} position (<a href="${recipient.postingLink}">${recipient.postingId}</a>) at ${recipient.companyName}. I am very excited about the opportunity to contribute to your team and would love to further discuss how my background in ${recipient.jobDescriptionKeywords} aligns with the needs of ${recipient.companyName}.</p >
         
-        <p>I am particularly drawn to ${recipient.companyName} because of ${recipient.companyMissionValuesOrRecentProjects}. I believe my experience in ${myExperienceOrSkills} would be a valuable asset to your team.</p>
+        <p>I am particularly drawn to ${recipient.companyName} because of ${recipient.companyMissionValuesOrRecentProjects}. I believe my experience in ${transferableSkills} would be a valuable asset to your team.</p>
         
         <p>I have attached my resume for your review and would appreciate the opportunity to discuss my application in more detail. I am available ${myAvailability}, but I am flexible and willing to accommodate your schedule.</p>
         
