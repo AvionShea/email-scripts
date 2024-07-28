@@ -1,0 +1,20 @@
+{
+  "name": "email-scripts",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "cold": "node cold-email.js",
+    "thanks": "node thank-you.js",
+    "followup": "node follow-up.js",
+    "network": "node networking.js",
+    "coffee": "node coffee-chat.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "nodemailer": "^6.9.14"
+  }
+}
