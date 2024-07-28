@@ -2,7 +2,7 @@ require('dotenv').config();
 
 const nodemailer = require('nodemailer');
 
-const adminEmail = process.env.ADMIN_EMAIL
+const adminEmail = process.env.ADMIN_EMAIL;
 const adminEmailPassword = process.env.ADMIN_EMAIL_PASSWORD;
 
 const myName = "firstName lastName";
