@@ -75,13 +75,15 @@ npm run thanks
 npm run followup
 npm run network
 npm run coffee
+npm run checkin
 ```
 
 - npm run cold: "node cold-email.js",
 - npm run thanks: "node thank-you.js",
 - npm run followup: "node follow-up.js",
 - npm run network: "node networking.js",
-- npm run coffee: "node coffee-chat.js"
+- npm run coffee: "node coffee-chat.js",
+- npm run checkin: "node periodic-checkin.js"
 
 Feel free to change script names to match your preference.
 

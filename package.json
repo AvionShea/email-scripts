@@ -7,7 +7,8 @@
     "thanks": "node thank-you.js",
     "followup": "node follow-up.js",
     "network": "node networking.js",
-    "coffee": "node coffee-chat.js"
+    "coffee": "node coffee-chat.js",
+    "checkin": "node periodic-checkin.js"
   },
   "keywords": [],
   "author": "",
