@@ -57,7 +57,7 @@ const sendMail = async (recipientEmail, positionTitle, emailBody) => {
     let mailOptions = {
         from: adminEmail,
         to: recipientEmail,
-        subject: `Application follow-up for ${positionTitle} position`,
+        subject: `Application follow-up for ${positionTitle} position - ${myName}`,
         html: emailBody
     };
 
