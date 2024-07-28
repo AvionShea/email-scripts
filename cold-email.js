@@ -38,8 +38,8 @@ const recipients = [
 
 
 const transporter = nodemailer.createTransport({
-    service: "gmail",
-    host: "smtp.gmail.com",
+    service: "yahoo", //"gmail" <- use for gmail
+    host: "smtp.mail.yahoo.com", //"smtp.gmail.com" <- use for gmail
     port: 465,
     secure: true, // Use `true` for port 465, `false` for all other ports
     auth: {
