@@ -58,7 +58,12 @@ const sendMail = async (recipientEmail, positionTitle, emailBody) => {
         from: adminEmail,
         to: recipientEmail,
         subject: `Application follow-up for ${positionTitle} position - ${myName}`,
-        html: emailBody
+        html: emailBody,
+        attachments: [{
+            filename: "fileName.pdf",
+            path: "users/document/folder/fileName.pdf",
+            contentType: "application/pdf"
+        }]
     };
 
     transporter.sendMail(mailOptions, function (error) {
@@ -81,7 +86,7 @@ recipients.forEach((recipient) => {
         
         <p>I am particularly drawn to ${recipient.companyName} because of ${recipient.companyMissionValuesOrRecentProjects}. I believe my experience in ${myExperienceOrSkills} would be a valuable asset to your team.</p>
         
-        <p>Could we schedule a time to discuss my application in more detail? I am available ${myAvailability}, but I am flexible and willing to accommodate your schedule.</p>
+        <p>I have attached my resume for your review and would appreciate the opportunity to discuss my application in more detail. I am available ${myAvailability}, but I am flexible and willing to accommodate your schedule.</p>
         
         <p>Thank you for considering my application. I look forward to the possibility of speaking with you soon.</p>
         
