@@ -8,7 +8,7 @@ const adminEmailPassword = process.env.ADMIN_EMAIL_PASSWORD;
 const myName = "firstName lastName";
 const myEmail = "firstNamelastName@server.com";
 const myLinkedin = "https://www.linkedin.com/in/firstName-lastName/";
-const myField = "software engineering";
+const myFieldOrJobDescriptionKeywords = "customer service, SDLC, teamwork, and communication";
 const myExperienceOrSkills = "JavaScript, Java, and MySQL";
 const myAvailability = "Monday through Friday after 3 P.M.";
 
@@ -82,7 +82,7 @@ recipients.forEach((recipient) => {
         `<div>
             <p>Dear ${recipient.hiringManagerName},</p>
     
-        <p>I hope this message finds you well. My name is ${myName}, and I recently applied for the ${recipient.positionJobTitle} position (<a href="${recipient.postingLink}">${recipient.postingId}</a>) at ${recipient.companyName}. I am very excited about the opportunity to contribute to your team and would love to further discuss how my background in ${myField} aligns with the needs of ${recipient.companyName}.</p >
+        <p>I hope this message finds you well. My name is ${myName}, and I recently applied for the ${recipient.positionJobTitle} position (<a href="${recipient.postingLink}">${recipient.postingId}</a>) at ${recipient.companyName}. I am very excited about the opportunity to contribute to your team and would love to further discuss how my background in ${myFieldOrJobDescriptionKeywords} aligns with the needs of ${recipient.companyName}.</p >
         
         <p>I am particularly drawn to ${recipient.companyName} because of ${recipient.companyMissionValuesOrRecentProjects}. I believe my experience in ${myExperienceOrSkills} would be a valuable asset to your team.</p>
         
