@@ -17,6 +17,20 @@ const recipients = [
         specificFieldOrProject: "software engineering",
         industryOrSpecificTopic: "AI",
     },
+    {
+        contactName: "Bobby-Jean Cannon",
+        contactEmail: "fakeEmail@server.com",
+        platformOrMutualConnection: "LinkedIn",
+        specificFieldOrProject: "machine learning",
+        industryOrSpecificTopic: "Python",
+    },
+    {
+        contactName: "Zack Long",
+        contactEmail: "fakeEmail@server.com",
+        platformOrMutualConnection: "Instagram",
+        specificFieldOrProject: "social media",
+        industryOrSpecificTopic: "YouTube",
+    },
 ];
 
 
