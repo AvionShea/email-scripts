@@ -18,9 +18,20 @@ const recipients = [
         contactEmail: "fakeEmail@server.com",
         brieflyDescribeRecentProjectsAchievementsOrChangesInProfessionalLife: "recently hired at Google as a Software Engineer I",
         specificSkillOrIndustryTopic: "Ruby on Rails",
+        anArticleEventOrResource: "an article about building in public",
         articleLink: "https://dev.to/blackgirlbytes/how-to-learn-in-public-1coh",
         articleTitle: "How to learn in public",
         specificTopicYouDiscussedBefore: "ways for your work to be seen",
+    },
+    {
+        contactName: "Rebecca Long",
+        contactEmail: "fakeEmail@server.com",
+        brieflyDescribeRecentProjectsAchievementsOrChangesInProfessionalLife: "recently hired at Redhat as a software engineer",
+        specificSkillOrIndustryTopic: "Linux",
+        anArticleEventOrResource: "an organization that is geared towards Black engineers",
+        articleLink: "https://nsbe.org/",
+        articleTitle: "National Society of Black Engineers",
+        specificTopicYouDiscussedBefore: "joining organizations",
     },
 ];
 
@@ -71,7 +82,7 @@ recipients.forEach((recipient) => {
         
         <p>I would love to hear how things have been going for you. What projects or initiatives are you currently working on? Are there any recent developments or achievements you'd like to share?</p>
 
-        <p>Additionally, I came across ${recipient.anArticleEventOrResource} that I thought might be of interest to you: <a href="${recipient.articleLink}}">${recipient.articleTitle}</a>. It reminded me of our conversation about ${recipient.specificTopicYouDiscussedBefore}.</p>
+        <p>Additionally, I came across ${recipient.anArticleEventOrResource} that I thought might be of interest to you: <a href="${recipient.articleLink}">${recipient.articleTitle}</a>. It reminded me of our conversation about ${recipient.specificTopicYouDiscussedBefore}.</p>
 
         <p>Looking forward to catching up and hearing more about what you’ve been up to. Please feel free to suggest a time if you'd like to chat further.</p>
         
