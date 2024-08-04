@@ -53,12 +53,12 @@ const transporter = nodemailer.createTransport({
     },
 });
 
-const sendMail = async (recipientEmail, positionTitle, emailBody) => {
+const sendMail = async (hiringManagerEmail, positionJobTitle, emailBody) => {
 
     let mailOptions = {
         from: adminEmail,
-        to: recipientEmail,
-        subject: `Application follow-up for ${positionTitle} position - ${myName}`,
+        to: hiringManagerEmail,
+        subject: `Application follow-up for ${positionJobTitle} position - ${myName}`,
         html: emailBody,
         attachments: [{
             filename: "fileName.pdf",
@@ -71,7 +71,7 @@ const sendMail = async (recipientEmail, positionTitle, emailBody) => {
         if (error) {
             console.log(error);
         } else {
-            console.log(`Email sent successfully to ${recipientEmail}!`);
+            console.log(`Email sent successfully to ${hiringManagerEmail}!`);
         }
     });
 };
