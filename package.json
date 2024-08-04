@@ -8,7 +8,8 @@
     "followup": "node follow-up.js",
     "network": "node networking.js",
     "coffee": "node coffee-chat.js",
-    "checkin": "node periodic-checkin.js"
+    "checkin": "node periodic-checkin.js",
+    "culture": "node company-culture.js"
   },
   "keywords": [],
   "author": "",
