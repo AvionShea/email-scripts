@@ -74,5 +74,5 @@ recipients.forEach((recipient) => {
         </div>
         `
 
-    sendMail(recipient.contactEmail, recipient.eventTitle, emailBody);
+    sendMail(recipient.contactEmail, recipient.companyName, emailBody);
 });
