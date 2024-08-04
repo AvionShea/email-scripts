@@ -76,6 +76,7 @@ npm run followup
 npm run network
 npm run coffee
 npm run checkin
+npm run culture
 ```
 
 - npm run cold: "node cold-email.js",
@@ -83,7 +84,8 @@ npm run checkin
 - npm run followup: "node follow-up.js",
 - npm run network: "node networking.js",
 - npm run coffee: "node coffee-chat.js",
-- npm run checkin: "node periodic-checkin.js"
+- npm run checkin: "node periodic-checkin.js",
+- npm run culture: "node company-culture.js"
 
 Feel free to change script names to match your preference.
 
